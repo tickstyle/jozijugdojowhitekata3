@@ -24,6 +24,7 @@ public class MyTwitterApplication {
             System.out.println(user.getFollowersCount());
             List<Status> statuses = twitter.getUserTimeline(user.getId());
             //Your code goes here
+            System.out.println("The current status is: " + statuses.get(0).getText());
 
         } catch (TwitterException tExp) {
             System.out.println("Twitter error :" + tExp.getMessage());
